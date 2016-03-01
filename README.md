@@ -5,7 +5,8 @@ tool to execute a command repeatedly
 $ speedchron options 'command args'
 
 This script run the the command. Then if the command exit status is 0 run it again. 
-Otherwise wait -t seconds and then run the command again.
+If the exist status of the command is 128 wait -t seconds and then run the command again.
+Oterwise report the stderr via mail.
 
 OPTIONS:
 
